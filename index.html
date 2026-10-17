@@ -150,6 +150,112 @@ menu{display:block}nav{display:none;position:absolute;left:4%;right:4%;top:68px;
   color: #ccc;
 }
 
+/* ===== NOTÍCIAS GAMER - SABINOTV ===== */
+.news-section {
+  margin: 50px 0;
+  padding: 30px;
+  background: linear-gradient(135deg, #151515, #0b0b0b);
+  border: 1px solid #292929;
+  border-radius: 16px;
+}
+
+.news-section .section-header {
+  margin-bottom: 25px;
+}
+
+.news-section .section-header h2 {
+  color: #ff3030;
+  font-size: clamp(24px, 4vw, 32px);
+  margin: 0 0 10px;
+}
+
+.news-section .section-header p {
+  color: #c4c4c4;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff3030;
+}
+
+.news-content {
+  padding: 22px;
+}
+
+.news-tag {
+  display: inline-block;
+  color: #ff5a5a;
+  background: #351313;
+  border: 1px solid #632020;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.news-card h3 {
+  color: #fff;
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+
+.news-card p {
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+.news-card a {
+  color: #ff4545;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.news-card a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .news-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .news-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-section {
+    margin: 30px 0;
+    padding: 16px;
+  }
+}
+
   </style>
 </head>
 <body>
