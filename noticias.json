@@ -1,285 +1,334 @@
 {
-  "atualizado_em": "2026-10-17T15:59:07.870074+00:00",
+  "atualizado_em": "2026-10-17T17:36:28.067035+00:00",
+  "categorias": [
+    "Dead by Daylight",
+    "Once Human",
+    "Steam",
+    "Atualizações",
+    "Jogos grátis",
+    "Promoções",
+    "Lançamentos"
+  ],
   "noticias": [
     {
       "titulo": "Não termine GTA 6 apenas uma vez! A Rockstar confirma que seu jogo foi projetado para ser jogado várias vezes, assim como Red Dead Redemption 2",
       "resumo": "Embora a Rockstar Games veja isso como a promessa definitiva de uma experiência orgânica, essa comparação deixa alguns jogadores apreensivos",
       "link": "https://br.ign.com/grand-theft-auto-vi/156895/nao-termine-gta-6-apenas-uma-vez-a-rockstar-confirma-que-seu-jogo-foi-projetado-para-ser-jogado-vari",
       "fonte": "IGN Brasil",
-      "data": "2026-10-17T13:00:35+00:00"
+      "data": "2026-10-17T13:00:35+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "“É um presente maravilhoso”: 9 anos atrás, ele era considerado o maior motivo de vergonha da Marvel; agora, o Punho de Ferro está tendo uma segunda chance",
       "resumo": "Finn Jones retorna na 3ª temporada de “Demolidor: Renascido” no papel de Danny Rand, também conhecido como Punho de Ferro. Ele é, sem dúvida, o elo mais fraco entre os Defensores",
       "link": "https://br.ign.com/demolidor-renascido/156894/e-um-presente-maravilhoso-9-anos-atras-ele-era-considerado-o-maior-motivo-de-vergonha-da-marvel-agor",
       "fonte": "IGN Brasil",
-      "data": "2026-10-17T12:00:37+00:00"
+      "data": "2026-10-17T12:00:37+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "É uma das melhores minisséries de todos os tempos, baseada em um dos melhores romances policiais, e você pode assisti-la por streaming",
       "resumo": "Oito episódios que deixam você com vontade de assistir um atrás do outro",
       "link": "https://br.ign.com/cinema-tv/156893/e-uma-das-melhores-minisseries-de-todos-os-tempos-baseada-em-um-dos-melhores-romances-policiais-e-vo",
       "fonte": "IGN Brasil",
-      "data": "2026-10-17T11:03:30+00:00"
+      "data": "2026-10-17T11:03:30+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Um dos melhores animes de ficção científica dos últimos anos anuncia nova produção",
       "resumo": "A grande dúvida no momento é quando poderemos assistir à novidade",
       "link": "https://br.ign.com/dr-stone/156831/um-dos-melhores-animes-de-ficcao-cientifica-dos-ultimos-anos-anuncia-nova-producao",
       "fonte": "IGN Brasil",
-      "data": "2026-10-17T10:00:40+00:00"
+      "data": "2026-10-17T10:00:40+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Dragon Ball Super Beerus: apesar das reclamações sobre reutilização da licença, retorno de Goku derrubou servidores de streaming",
       "resumo": "A comoção generalizada não se resume a um surto momentâneo de nostalgia",
       "link": "https://br.ign.com/dragon-ball-super/156833/dragon-ball-super-beerus-apesar-das-reclamacoes-sobre-reutilizacao-da-licenca-retorno-de-goku-derrub",
       "fonte": "IGN Brasil",
-      "data": "2026-10-17T09:00:38+00:00"
+      "data": "2026-10-17T09:00:38+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "2 por 1! Combo com dois jogos da saga Marvel’s Spider-Man para PS5 sai pelo preço de um em oferta exclusiva da Amazon",
       "resumo": "Peter Parker e Miles Morales reunidos no PS5 em um único combo. Confira a oferta na Amazon e leve duas aventuras de mundo aberto para a sua coleção! Homem-Aranha com desconto na Amazon!",
       "link": "https://br.ign.com/descontos/156901/2-por-1-combo-com-dois-jogos-da-saga-marvels-spider-man-para-ps5-sai-pelo-preco-de-um-em-oferta-excl",
       "fonte": "IGN Brasil",
-      "data": "2026-10-17T03:30:17+00:00"
+      "data": "2026-10-17T03:30:17+00:00",
+      "categoria": "Promoções"
     },
     {
       "titulo": "Este RPG de sobrevivência foi lançado ontem e, segundo o Metacritic, é um dos melhores jogos de todos os tempos",
       "resumo": "Este sucesso do gênero de sobrevivência, vindo da Alemanha, passou três anos em Acesso Antecipado. Agora, a versão 1.0 já está disponível e está recebendo elogios unânimes",
       "link": "https://br.ign.com/enshrouded/156891/este-rpg-de-sobrevivencia-foi-lancado-ontem-e-segundo-o-metacritic-e-um-dos-melhores-jogos-de-todos",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T21:45:44+00:00"
+      "data": "2026-10-16T21:45:44+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Filme live-action de Cyberpunk 2077 não seguirá os passos do jogo, confirma a CD Projekt",
       "resumo": "O filme de Cyberpunk está sendo produzido em parceria com a Paramount, agora sob a bandeira da Skydance após a recente fusão A CD Projekt Red finalmente se pronunciou sobre o filme live-action de Cyberpunk 2077 . A empresa afirmou que não pretende fazer uma adaptação fiel do jogo, mas sim contar uma nova história dentro do mesmo universo. “Neste mo",
       "link": "https://br.ign.com/cyberpunk-2077-1/156889/filme-live-action-de-cyberpunk-2077-nao-seguira-os-passos-do-jogo-confirma-a-cd-projekt",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T21:37:28+00:00"
+      "data": "2026-10-16T21:37:28+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "CD Projekt começou oficialmente a trabalhar no Projeto Hadar, mas ele ainda não está em pré-produção",
       "resumo": "Ta-da! A CD Projekt Red, desenvolvedora polonesa mais conhecida por suas incríveis séries de RPG, como The Witcher e Cyberpunk 2077, concluiu oficialmente a concepção de um novo mundo para explorarmos. A fase de “visão do mundo” para sua nova propriedade intelectual, o Project Hadar, foi concluída, e o trabalho para …",
       "link": "https://br.ign.com/codename-hadar/156888/cd-projekt-comecou-oficialmente-a-trabalhar-no-projeto-hadar-mas-ele-ainda-nao-esta-em-pre-producao",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T21:32:00+00:00"
+      "data": "2026-10-16T21:32:00+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Mais de 30 novas imagens de GTA 6 do trailer de lançamento",
       "resumo": "Está quase lá Reunimos mais de 30 capturas de tela do trailer de lançamento de GTA 6, mostrando em detalhes o mundo aberto da Rockstar. A Rockstar surpreendeu os fãs ao divulgar um novo trailer de GTA 6 . Este parece ser o último trailer completo do jogo antes do lançamento, mas …",
       "link": "https://br.ign.com/grand-theft-auto-vi/156886/mais-de-30-novas-imagens-de-gta-6-do-trailer-de-lancamento",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T21:18:11+00:00"
+      "data": "2026-10-16T21:18:11+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "GTA 6 Launch Trailer Screenshots",
       "resumo": "",
       "link": "https://br.ign.com/grand-theft-auto-vi/156887/gta-6-launch-trailer-screenshots",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T21:18:11+00:00"
+      "data": "2026-10-16T21:18:11+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Um dos jogos de maior sucesso de 2025 finalmente poderá ser jogado nos consoles ainda este mês",
       "resumo": "Prepare-se para escalada",
       "link": "https://br.ign.com/peak/156885/um-dos-jogos-de-maior-sucesso-de-2025-finalmente-podera-ser-jogado-nos-consoles-ainda-este-mes",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T21:02:42+00:00"
+      "data": "2026-10-16T21:02:42+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "33 novos detalhes do trailer de lançamento de GTA 6",
       "resumo": "Você percebeu a referência ao GTA 1? Mais uma prévia de GTA 6 chegou até nós, o que significa que é hora de fazer uma análise minuciosa; examinamos o novo trailer com um pente fino para identificar todos os detalhes interessantes escondidos nele. Desde vislumbres do que está por vir em algumas de suas missões mais explosivas, …",
       "link": "https://br.ign.com/grand-theft-auto-vi/156883/33-novos-detalhes-do-trailer-de-lancamento-de-gta-6",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T20:50:37+00:00"
+      "data": "2026-10-16T20:50:37+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Street Fighter: como nasceu Blanka, o brasileiro mais famoso dos games - IGN Pop",
       "resumo": "Por que o Blanka é verde?⚡Conheça a história do brasileiro mais famoso de Street Fighter, que conquistou os fliperamas com seus choques do trovão, aparência bizarra e origem completamente absurda. Neste episódio do IGN Pop, vamos descobrir como a Capcom criou Blanka-chan para Street Fighter II, os conceitos descartados que deram origem ao personage",
       "link": "https://br.ign.com/street-fighter-2026/156876/street-fighter-como-nasceu-blanka-o-brasileiro-mais-famoso-dos-games-ign-pop",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T20:42:32+00:00"
+      "data": "2026-10-16T20:42:32+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Oferta: Star Wars Zero Company para PS5 está saindo por menos de R$ 240 na Amazon",
       "resumo": "Estratégia em turnos da EA e da Respawn foi criada por veteranos de XCOM e se passa no fim das Guerras Clônicas",
       "link": "https://br.ign.com/descontos/156882/oferta-star-wars-zero-company-para-ps5-esta-saindo-por-menos-de-r-240-na-amazon",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T20:26:20+00:00"
+      "data": "2026-10-16T20:26:20+00:00",
+      "categoria": "Promoções"
     },
     {
       "titulo": "Upgrade de tela: como escolher o monitor gamer Alienware ideal para o seu setup",
       "resumo": "Taxa de atualização, tempo de resposta e sincronização: entenda o que importa na hora de renovar o display e extrair todo o potencial da sua placa de vídeo.",
       "link": "https://br.ign.com/descontos/156881/upgrade-de-tela-como-escolher-o-monitor-gamer-alienware-ideal-para-o-seu-setup",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T19:23:51+00:00"
+      "data": "2026-10-16T19:23:51+00:00",
+      "categoria": "Promoções"
     },
     {
       "titulo": "Black Friday Dell: como escolher o notebook gamer certo para não errar na promoção",
       "resumo": "Nem toda etiqueta de desconto significa bom negócio. Veja quais especificações realmente importam para não cair numa promoção de notebook gamer que parece boa, mas não é.",
       "link": "https://br.ign.com/descontos/156880/black-friday-dell-como-escolher-o-notebook-gamer-certo-para-nao-errar-na-promocao",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T19:11:46+00:00"
+      "data": "2026-10-16T19:11:46+00:00",
+      "categoria": "Promoções"
     },
     {
       "titulo": "Final Fantasy 7 Revelation expande o que já vimos anteriormente na série para criar conclusão épica | Preview",
       "resumo": "Novidades do combate colaboram para uma ótima experiência",
       "link": "https://br.ign.com/final-fantasy-vii-revelation/156879/final-fantasy-7-revelation-expande-o-que-ja-vimos-anteriormente-na-serie-para-criar-conclusao-epica",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T17:31:35+00:00"
+      "data": "2026-10-16T17:31:35+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Fone Bluetooth Anker P30i atinge menor preço do ano na Amazon",
       "resumo": "Cancelamento de ruído de até 42 dB, bateria de 45 horas e graves reforçados em um fone Bluetooth compacto",
       "link": "https://br.ign.com/descontos/156877/fone-bluetooth-anker-p30i-atinge-menor-preco-do-ano-na-amazon",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T17:30:34+00:00"
+      "data": "2026-10-16T17:30:34+00:00",
+      "categoria": "Promoções"
     },
     {
       "titulo": "Menor preço do ano! Bundle de Death Stranding 1 e 2 fica mais barato para membros Prime",
       "resumo": "Explore a jornada de Sam Bridges nos dois jogos da franquia e aproveite o desconto para economizar muito na coleção!",
       "link": "https://br.ign.com/descontos/156875/menor-preco-do-ano-bundle-de-death-stranding-1-e-2-fica-mais-barato-para-membros-prime",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T15:12:34+00:00"
+      "data": "2026-10-16T15:12:34+00:00",
+      "categoria": "Promoções"
     },
     {
       "titulo": "The Batman - Parte 2 traz o diretor Steven Soderbergh para finalizar o filme no lugar de Matt Reeves; Reeves responde com um novo comunicado",
       "resumo": "Dupla dinâmica",
       "link": "https://br.ign.com/the-batman-2/156870/the-batman-parte-2-traz-o-diretor-steven-soderbergh-para-finalizar-o-filme-no-lugar-de-matt-reeves-r",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T14:08:23+00:00"
+      "data": "2026-10-16T14:08:23+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "O remake de The Legend of Zelda me arrancou lágrimas que eu não esperava | Preview",
       "resumo": "Game chega em 5 de novembro exclusivamente para o Nintendo Switch 2 É um conhecimento universal de que The Legend of Zelda: Ocarina of Time é um dos melhores jogos da história dos videogames — e isso não é apenas uma opinião, mas, sim, um fato. Mais de 30 anos depois, esse incrível jogo chega …",
       "link": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/156840/o-remake-de-the-legend-of-zelda-me-arrancou-lagrimas-que-eu-nao-esperava-preview",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T14:00:35+00:00"
+      "data": "2026-10-16T14:00:35+00:00",
+      "categoria": "Lançamentos"
     },
     {
       "titulo": "The Legend of Zelda: Ocarina of Time Preview Screenshots",
       "resumo": "",
       "link": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/156869/the-legend-of-zelda-ocarina-of-time-preview-screenshots",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T13:56:29+00:00"
+      "data": "2026-10-16T13:56:29+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Aqui está nossa primeira visão de Dark Link no remake de The Legend of Zelda: Ocarina of Time",
       "resumo": "Duelo entre iguais",
       "link": "https://br.ign.com/the-legend-of-zelda-ocarina-of-time-2026/156868/aqui-esta-nossa-primeira-visao-de-dark-link-no-remake-de-the-legend-of-zelda-ocarina-of-time",
       "fonte": "IGN Brasil",
-      "data": "2026-10-16T13:56:29+00:00"
+      "data": "2026-10-16T13:56:29+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Activision confirma que uma nova subfranquia de Call of Duty está em desenvolvimento, gerando intensa especulação entre os fãs",
       "resumo": "Hora de algo diferente",
       "link": "https://br.ign.com/call-of-duty-modern-warfare-4/156862/activision-confirma-que-uma-nova-subfranquia-de-call-of-duty-esta-em-desenvolvimento-gerando-intensa",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T23:56:05+00:00"
+      "data": "2026-10-15T23:56:05+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "GTA 6: 33 New Details From the Launch Trailer",
       "resumo": "Rockstar has released the launch trailer for Grand Theft Auto 6. If that's not a clear indication that GTA 6 will finally be releasing soon, we don't know what is. In this trailer we get quite a decent look at some details that haven't been spotted in before this trailer's release. This include things like available weaponry, steamy shower scenes, ",
       "link": "https://br.ign.com/grand-theft-auto-vi/156884/gta-6-33-new-details-from-the-launch-trailer",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T21:38:32+00:00"
+      "data": "2026-10-15T21:38:32+00:00",
+      "categoria": "Steam"
     },
     {
       "titulo": "Série que acabou de estrear na HBO Max tem 8 episódios, é perfeita para o Halloween, do criador de uma das melhores séries do ano passado",
       "resumo": "A HBO Max tem uma surpresa de Halloween para os fãs de terror. “Crystal Lake”, estrelado por Linda Cardellini, estreia na plataforma. Trata-se de uma prequela da aclamada série “Sexta-Feira 13”.",
       "link": "https://br.ign.com/crystal-lake/156867/serie-que-acabou-de-estrear-na-hbo-max-tem-8-episodios-e-perfeita-para-o-halloween-do-criador-de-uma",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T21:14:41+00:00"
+      "data": "2026-10-15T21:14:41+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Em duas semanas, uma das trilogias de fantasia mais épicas da história, com arrecadação de US$ 2,9 bilhões, chegará ao Prime Video",
       "resumo": "Após um intervalo de vários meses, o Prime Video traz mais uma vez a aclamada trilogia de fantasia para sua plataforma.",
       "link": "https://br.ign.com/o-senhor-dos-aneis/156865/em-duas-semanas-uma-das-trilogias-de-fantasia-mais-epicas-da-historia-com-arrecadacao-de-us-29-bilho",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T21:11:11+00:00"
+      "data": "2026-10-15T21:11:11+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Astros de Street Fighter revelam bastidores do filme - IGN Entrevista",
       "resumo": "Jason Momoa como Blanka, Noah Centineo como Ken e Andrew Koji como Ryu, Callina Liang como Chun-Li! O elenco de Street Fighter conversou com o IGN Brasil sobre o novo filme inspirado em uma das franquias mais icônicas dos videogames. Na entrevista, Jason Momoa explica por que sempre quis interpretar Blanka, Callina Liang fala sobre a responsabilida",
       "link": "https://br.ign.com/street-fighter-2026/156866/astros-de-street-fighter-revelam-bastidores-do-filme-ign-entrevista",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T21:06:04+00:00"
+      "data": "2026-10-15T21:06:04+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Castlevania: Belmont's Curse entrega uma das melhores experiências do ano com um banho de nostalgia",
       "resumo": "Mais um jogo incrível em 2026",
       "link": "https://br.ign.com/castlevania-belmonts-curse-1/156863/castlevania-belmonts-curse-entrega-uma-das-melhores-experiencias-do-ano-com-um-banho-de-nostalgia",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T21:04:31+00:00"
+      "data": "2026-10-15T21:04:31+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "\"Sem querer ofender Zelda, mas [GTA e COD] são os dois maiores jogos do ano”: Activision acredita que o GTA 6 vai, na verdade, ajudar o Modern Warfare 4",
       "resumo": "Veremos! A Activision acredita que GTA 6 beneficiará o Call of Duty, em vez de prejudicá-lo, com a expectativa de que Modern Warfare 4 e o gigante da Rockstar acabem sendo os dois maiores jogos de 2026. Em entrevista ao The Game Business , o diretor de marketing da …",
       "link": "https://br.ign.com/call-of-duty-modern-warfare-4/156864/sem-querer-ofender-zelda-mas-gta-e-cod-sao-os-dois-maiores-jogos-do-ano-activision-acredita-que-o-gt",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T20:16:20+00:00"
+      "data": "2026-10-15T20:16:20+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Combo de God of War: Laufey + Ragnarök tem 37% OFF para membros Prime",
       "resumo": "Prepare-se para o próximo God of War revisitando a saga e economizando na compra dos dois jogos!",
       "link": "https://br.ign.com/descontos/156861/combo-de-god-of-war-laufey-ragnarok-tem-37-off-para-membros-prime",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T17:53:58+00:00"
+      "data": "2026-10-15T17:53:58+00:00",
+      "categoria": "Promoções"
     },
     {
       "titulo": "Mafia: The Old Country para PS5 por menos de R$ 200 na Amazon",
       "resumo": "Jogo da Hangar 13 se passa na Sicília de 1904 e conta o início da história do crime organizado na franquia",
       "link": "https://br.ign.com/descontos/156860/mafia-the-old-country-para-ps5-por-menos-de-r-200-na-amazon",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T16:49:53+00:00"
+      "data": "2026-10-15T16:49:53+00:00",
+      "categoria": "Promoções"
     },
     {
       "titulo": "Smartwatch Samsung Galaxy Watch8 ganha cupom e cai para menor preço da web no Mercado Livre",
       "resumo": "Versão prata sai por pouco mais de R$ 1 mil",
       "link": "https://br.ign.com/descontos/156859/smartwatch-samsung-galaxy-watch8-ganha-cupom-e-cai-para-menor-preco-da-web-no-mercado-livre",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T16:21:17+00:00"
+      "data": "2026-10-15T16:21:17+00:00",
+      "categoria": "Promoções"
     },
     {
       "titulo": "Ator de Zangief em novo filme de Street Fighter quer muito interpretar Tyr na série live-action de God of War",
       "resumo": "Será que vem aí? Tivemos a oportunidade de conversar com Olivier Richters no tapete vermelho de Street Fighter, e ele nos contou que adoraria interpretar Tyr na série live-action God of War, da Prime Video. Richters é um homem imponente. Com mais de sete pés de altura e pesando mais de 150 quilos, faz …",
       "link": "https://br.ign.com/god-of-war-the-series/156849/ator-de-zangief-em-novo-filme-de-street-fighter-quer-muito-interpretar-tyr-na-serie-live-action-de-g",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T15:48:40+00:00"
+      "data": "2026-10-15T15:48:40+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "All Multiplayer Maps in Call of Duty: Modern Warfare 4 Open Beta",
       "resumo": "",
       "link": "https://br.ign.com/call-of-duty-modern-warfare-4/156857/all-multiplayer-maps-in-call-of-duty-modern-warfare-4-open-beta",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T15:44:35+00:00"
+      "data": "2026-10-15T15:44:35+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Horário de preload e lançamento global de Call of Duty: Modern Warfare 4 para campanha, DMZ e jogo completo são confirmados",
       "resumo": "Preparem-se A Activision confirmou os horários de lançamento global e os detalhes do pré-carregamento de Call of Duty: Modern Warfare 4, que será lançado em etapas nas próximas semanas. Modern Warfare 4 (jogo completo, incluindo o modo multijogador) será lançado oficialmente em 23 de outubro em todas as plataformas, mas você …",
       "link": "https://br.ign.com/call-of-duty-modern-warfare-4/156856/horario-de-preload-e-lancamento-global-de-call-of-duty-modern-warfare-4-para-campanha-dmz-e-jogo-com",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T15:44:35+00:00"
+      "data": "2026-10-15T15:44:35+00:00",
+      "categoria": "Lançamentos"
     },
     {
       "titulo": "Com clássico do PS1 e um dos principais exclusivos da geração, PlayStation anuncia catálogo do PS Plus Extra e Deluxe de outubro de 2026",
       "resumo": "Uma oferta que você não pode recusar",
       "link": "https://br.ign.com/dino-crisis-2/156855/com-classico-do-ps1-e-um-dos-principais-exclusivos-da-geracao-playstation-anuncia-catalogo-do-ps-plu",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T15:33:47+00:00"
+      "data": "2026-10-15T15:33:47+00:00",
+      "categoria": "Promoções"
     },
     {
       "titulo": "Nível de detalhe de GTA 6 é tão extremo que Rockstar criou um sistema programado inteiro só para o suor",
       "resumo": "E precisava? A Rockstar Games é, obviamente, conhecida por sua atenção aos detalhes, com os jogos anteriores da série Grand Theft Auto e Red Dead Redemption elevando o padrão de realismo. GTA 6, porém, parece destinado a ir além de qualquer videogame anterior, com um sistema dedicado que determina o quanto os …",
       "link": "https://br.ign.com/grand-theft-auto-vi/156851/nivel-de-detalhe-de-gta-6-e-tao-extremo-que-rockstar-criou-um-sistema-programado-inteiro-so-para-o-s",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T15:32:57+00:00"
+      "data": "2026-10-15T15:32:57+00:00",
+      "categoria": "Atualizações"
     },
     {
       "titulo": "Xbox estaria conduzindo pesquisa com usuários sobre retorno à exclusividade total para seus jogos",
       "resumo": "Mudança de estratégia A Xbox teria realizado uma pesquisa com jogadores para saber como eles se sentiriam em relação a um retorno à exclusividade nos consoles para todos os seus jogos, com exceção de Call of Duty. A pesquisa, identificada e compartilhada inicialmente pelo Windows Central , faz várias perguntas aos …",
       "link": "https://br.ign.com/xbox-series-x-1/156846/xbox-estaria-conduzindo-pesquisa-com-usuarios-sobre-retorno-a-exclusividade-total-para-seus-jogos",
       "fonte": "IGN Brasil",
-      "data": "2026-10-15T15:28:11+00:00"
+      "data": "2026-10-15T15:28:11+00:00",
+      "categoria": "Atualizações"
     }
   ]
 }
