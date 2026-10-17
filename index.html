@@ -103,6 +103,53 @@ button:focus-visible {
   }
 }
 menu{display:block}nav{display:none;position:absolute;left:4%;right:4%;top:68px;padding:18px;background:#111116;border:1px solid var(--line);border-radius:10px;flex-direction:column;gap:17px}nav.open{display:flex}.nav>.social{display:none}.hero{padding:68px 0 60px}h1{letter-spacing:-2px}.grid{grid-template-columns:1fr}.art{height:155px}.about-grid{grid-template-columns:1fr;gap:28px}.section-head{align-items:start;flex-direction:column}.cta-inner{align-items:flex-start;flex-direction:column}.statline{flex-wrap:wrap}}
+
+.live-section {
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.live-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.live-header h2 {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.live-dot {
+  width: 12px;
+  height: 12px;
+  background: #ff2638;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #ff2638;
+}
+
+.live-player {
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  margin: 25px auto;
+  background: #151515;
+  border: 1px solid #ff2638;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.live-player iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.live-section p {
+  color: #ccc;
+}
+
   </style>
 </head>
 <body>
@@ -159,6 +206,32 @@ menu{display:block}nav{display:none;position:absolute;left:4%;right:4%;top:68px;
     href="https://www.twitch.tv/sabiinotv"
     target="_blank"
     rel="noopener noreferrer">
+    ASSISTIR NA TWITCH
+  </a>
+</section>
+
+
+<section id="live" class="live-section">
+  <div class="live-header">
+    <span class="live-dot"></span>
+    <h2>AO VIVO NA TWITCH</h2>
+  </div>
+
+  <p>Cola com o Sabino nas lives!</p>
+
+  <div class="live-player">
+    <iframe
+      src="https://player.twitch.tv/?channel=sabiinotv&parent=sabiinotv.github.io&muted=true"
+      title="Live do SabinoTV na Twitch"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <a class="btn twitch-btn"
+     href="https://www.twitch.tv/sabiinotv"
+     target="_blank"
+     rel="noopener noreferrer">
     ASSISTIR NA TWITCH
   </a>
 </section>
