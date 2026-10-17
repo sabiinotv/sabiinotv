@@ -504,5 +504,58 @@ https://www.youtube.com/embed/7hbqhfeTm2U
   }));
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+  
+<script>
+async function carregarNoticias() {
+  const grade = document.querySelector("#noticias .news-grid");
+  if (!grade) return;
+
+  try {
+    const resposta = await fetch("./noticias.json");
+    if (!resposta.ok) throw new Error("Não foi possível carregar as notícias");
+
+    const dados = await resposta.json();
+
+    if (!Array.isArray(dados.noticias) || dados.noticias.length === 0) {
+      throw new Error("Nenhuma notícia disponível");
+    }
+
+    grade.replaceChildren();
+
+    dados.noticias.forEach(noticia => {
+      const card = document.createElement("article");
+      card.className = "news-card";
+
+      const conteudo = document.createElement("div");
+      conteudo.className = "news-content";
+
+      const tag = document.createElement("span");
+      tag.className = "news-tag";
+      tag.textContent = noticia.fonte || "Games";
+
+      const titulo = document.createElement("h3");
+      titulo.textContent = noticia.titulo || "Notícia gamer";
+
+      const resumo = document.createElement("p");
+      resumo.textContent = noticia.resumo || "Confira os detalhes desta notícia.";
+
+      const link = document.createElement("a");
+      link.href = noticia.link;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "Ler notícia →";
+
+      conteudo.append(tag, titulo, resumo, link);
+      card.append(conteudo);
+      grade.append(card);
+    });
+  } catch (erro) {
+    console.error("Erro ao carregar notícias:", erro);
+  }
+}
+
+carregarNoticias();
+</script>
+
 </body>
 </html>
