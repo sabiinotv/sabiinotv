@@ -1,0 +1,38 @@
+
+name: Atualizar notícias gamer
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Atualizar notícias
+        run: python scripts/update_news.py
+
+      - name: Salvar notícias atualizadas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add noticias.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Atualiza notícias gamer"
+            git push
+          else
+            echo "Nenhuma alteração nas notícias."
+          fi
