@@ -35,7 +35,7 @@
     .social-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.social-pill{border:1px solid #3b3036;border-radius:8px;padding:11px 15px;background:#151116;font-weight:800}.social-pill:hover{border-color:var(--red)}
     .cta{padding:50px 0}.cta-inner{border:1px solid #57232d;border-radius:15px;padding:32px;background:radial-gradient(ellipse at right,#42101a,transparent 55%),#121116;display:flex;justify-content:space-between;align-items:center;gap:25px}
     footer{border-top:1px solid #282831;padding:25px 0;color:#92929d;font-size:.85rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    @media(max-width:760px){.nav{height:68px}.
+  
 /* SABINOTV - VISUAL GAMER */
 :root {
   --sabino-red: #ff2638;
@@ -102,7 +102,8 @@ button:focus-visible {
     transform: none;
   }
 }
-menu{display:block}nav{display:none;position:absolute;left:4%;right:4%;top:68px;padding:18px;background:#111116;border:1px solid var(--line);border-radius:10px;flex-direction:column;gap:17px}nav.open{display:flex}.nav>.social{display:none}.hero{padding:68px 0 60px}h1{letter-spacing:-2px}.grid{grid-template-columns:1fr}.art{height:155px}.about-grid{grid-template-columns:1fr;gap:28px}.section-head{align-items:start;flex-direction:column}.cta-inner{align-items:flex-start;flex-direction:column}.statline{flex-wrap:wrap}}
+@media(max-width:760px){
+.menu{display:block}nav{display:none;position:absolute;left:4%;right:4%;top:68px;padding:18px;background:#111116;border:1px solid var(--line);border-radius:10px;flex-direction:column;gap:17px}nav.open{display:flex}.nav>.social{display:none}.hero{padding:68px 0 60px}h1{letter-spacing:-2px}.grid{grid-template-columns:1fr}.art{height:155px}.about-grid{grid-template-columns:1fr;gap:28px}.section-head{align-items:start;flex-direction:column}.cta-inner{align-items:flex-start;flex-direction:column}.statline{flex-wrap:wrap}}
 
 .live-section {
   padding: 45px 20px;
@@ -504,59 +505,7 @@ https://www.youtube.com/embed/7hbqhfeTm2U
   }));
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-  
-<script>
-async function carregarNoticias() {
-  const grade = document.querySelector("#noticias .news-grid");
-  if (!grade) return;
-
-  try {
-    const resposta = await fetch("./noticias.json");
-    if (!resposta.ok) throw new Error("Não foi possível carregar as notícias");
-
-    const dados = await resposta.json();
-
-    if (!Array.isArray(dados.noticias) || dados.noticias.length === 0) {
-      throw new Error("Nenhuma notícia disponível");
-    }
-
-    grade.replaceChildren();
-
-    dados.noticias.forEach(noticia => {
-      const card = document.createElement("article");
-      card.className = "news-card";
-
-      const conteudo = document.createElement("div");
-      conteudo.className = "news-content";
-
-      const tag = document.createElement("span");
-      tag.className = "news-tag";
-      tag.textContent = noticia.fonte || "Games";
-
-      const titulo = document.createElement("h3");
-      titulo.textContent = noticia.titulo || "Notícia gamer";
-
-      const resumo = document.createElement("p");
-      resumo.textContent = noticia.resumo || "Confira os detalhes desta notícia.";
-
-      const link = document.createElement("a");
-      link.href = noticia.link;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = "Ler notícia →";
-
-      conteudo.append(tag, titulo, resumo, link);
-      card.append(conteudo);
-      grade.append(card);
-    });
-  } catch (erro) {
-    console.error("Erro ao carregar notícias:", erro);
-  }
-}
-
-carregarNoticias();
-</script>
-
+ 
 <script>
 async function carregarNoticias() {
   const grade = document.querySelector("#noticias .news-grid");
@@ -567,8 +516,10 @@ async function carregarNoticias() {
     if (!resposta.ok) throw new Error("Erro ao carregar notícias");
 
     const dados = await resposta.json();
+
     if (!Array.isArray(dados.noticias) || dados.noticias.length === 0) {
-      throw new Error("Nenhuma notícia disponível");
+      grade.textContent = "Nenhuma notícia disponível no momento.";
+      return;
     }
 
     grade.replaceChildren();
@@ -582,7 +533,7 @@ async function carregarNoticias() {
 
       const tag = document.createElement("span");
       tag.className = "news-tag";
-      tag.textContent = noticia.fonte || "Games";
+      tag.textContent = noticia.categoria || noticia.fonte || "Games";
 
       const titulo = document.createElement("h3");
       titulo.textContent = noticia.titulo || "Notícia gamer";
@@ -591,7 +542,7 @@ async function carregarNoticias() {
       resumo.textContent = noticia.resumo || "Confira os detalhes desta notícia.";
 
       const link = document.createElement("a");
-      link.href = noticia.link;
+      link.href = noticia.link || "#";
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       link.textContent = "Ler notícia →";
@@ -602,266 +553,12 @@ async function carregarNoticias() {
     });
   } catch (erro) {
     console.error("Erro ao carregar notícias:", erro);
+    grade.textContent = "Não foi possível carregar as notícias.";
   }
 }
 
 carregarNoticias();
 </script>
-
-<script>
-async function carregarNoticias() {
-  const grade = document.querySelector("#noticias .news-grid");
-  if (!grade) return;
-
-  try {
-    const resposta = await fetch("./noticias.json");
-    if (!resposta.ok) throw new Error("Erro ao carregar notícias");
-
-    const dados = await resposta.json();
-    if (!Array.isArray(dados.noticias) || dados.noticias.length === 0) {
-      throw new Error("Nenhuma notícia disponível");
-    }
-
-    grade.replaceChildren();
-
-    dados.noticias.forEach(noticia => {
-      const card = document.createElement("article");
-      card.className = "news-card";
-
-      const conteudo = document.createElement("div");
-      conteudo.className = "news-content";
-
-      const tag = document.createElement("span");
-      tag.className = "news-tag";
-      tag.textContent = noticia.fonte || "Games";
-
-      const titulo = document.createElement("h3");
-      titulo.textContent = noticia.titulo || "Notícia gamer";
-
-      const resumo = document.createElement("p");
-      resumo.textContent = noticia.resumo || "Confira os detalhes desta notícia.";
-
-      const link = document.createElement("a");
-      link.href = noticia.link;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = "Ler notícia →";
-
-      conteudo.append(tag, titulo, resumo, link);
-      card.append(conteudo);
-      grade.append(card);
-    });
-  } catch (erro) {
-    console.error("Erro ao carregar notícias:", erro);
-  }
-}
-
-carregarNoticias();
-</script>
-   
-<script>
-async function carregarNoticias() {
-  const grade = document.querySelector("#noticias .news-grid");
-  if (!grade) return;
-
-  try {
-    const resposta = await fetch("./noticias.json");
-    if (!resposta.ok) throw new Error("Erro ao carregar notícias");
-
-    const dados = await resposta.json();
-    if (!Array.isArray(dados.noticias) || dados.noticias.length === 0) {
-      throw new Error("Nenhuma notícia disponível");
-    }
-
-    grade.replaceChildren();
-
-    dados.noticias.forEach(noticia => {
-      const card = document.createElement("article");
-      card.className = "news-card";
-
-      const conteudo = document.createElement("div");
-      conteudo.className = "news-content";
-
-      const tag = document.createElement("span");
-      tag.className = "news-tag";
-      tag.textContent = noticia.fonte || "Games";
-
-      const titulo = document.createElement("h3");
-      titulo.textContent = noticia.titulo || "Notícia gamer";
-
-      const resumo = document.createElement("p");
-      resumo.textContent = noticia.resumo || "Confira os detalhes desta notícia.";
-
-      const link = document.createElement("a");
-      link.href = noticia.link;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = "Ler notícia →";
-
-      conteudo.append(tag, titulo, resumo, link);
-      card.append(conteudo);
-      grade.append(card);
-    });
-  } catch (erro) {
-    console.error("Erro ao carregar notícias:", erro);
-  }
-}
-
-carregarNoticias();
-</script>
-
-<script>
-async function carregarNoticias() {
-  const grade = document.querySelector("#noticias .news-grid");
-  if (!grade) return;
-
-  try {
-    const resposta = await fetch("./noticias.json");
-    if (!resposta.ok) throw new Error("Erro ao carregar notícias");
-
-    const dados = await resposta.json();
-    if (!Array.isArray(dados.noticias) || dados.noticias.length === 0) {
-      throw new Error("Nenhuma notícia disponível");
-    }
-
-    grade.replaceChildren();
-
-    dados.noticias.forEach(noticia => {
-      const card = document.createElement("article");
-      card.className = "news-card";
-
-      const conteudo = document.createElement("div");
-      conteudo.className = "news-content";
-
-      const tag = document.createElement("span");
-      tag.className = "news-tag";
-      tag.textContent = noticia.fonte || "Games";
-
-      const titulo = document.createElement("h3");
-      titulo.textContent = noticia.titulo || "Notícia gamer";
-
-      const resumo = document.createElement("p");
-      resumo.textContent = noticia.resumo || "Confira os detalhes desta notícia.";
-
-      const link = document.createElement("a");
-      link.href = noticia.link;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = "Ler notícia →";
-
-      conteudo.append(tag, titulo, resumo, link);
-      card.append(conteudo);
-      grade.append(card);
-    });
-  } catch (erro) {
-    console.error("Erro ao carregar notícias:", erro);
-  }
-}
-
-carregarNoticias();
-</script>
-
-<script>
-async function carregarNoticias() {
-  const grade = document.querySelector("#noticias .news-grid");
-  if (!grade) return;
-
-  try {
-    const resposta = await fetch("./noticias.json");
-    if (!resposta.ok) throw new Error("Erro ao carregar notícias");
-
-    const dados = await resposta.json();
-    if (!Array.isArray(dados.noticias) || dados.noticias.length === 0) {
-      throw new Error("Nenhuma notícia disponível");
-    }
-
-    grade.replaceChildren();
-
-    dados.noticias.forEach(noticia => {
-      const card = document.createElement("article");
-      card.className = "news-card";
-
-      const conteudo = document.createElement("div");
-      conteudo.className = "news-content";
-
-      const tag = document.createElement("span");
-      tag.className = "news-tag";
-      tag.textContent = noticia.fonte || "Games";
-
-      const titulo = document.createElement("h3");
-      titulo.textContent = noticia.titulo || "Notícia gamer";
-
-      const resumo = document.createElement("p");
-      resumo.textContent = noticia.resumo || "Confira os detalhes desta notícia.";
-
-      const link = document.createElement("a");
-      link.href = noticia.link;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = "Ler notícia →";
-
-      conteudo.append(tag, titulo, resumo, link);
-      card.append(conteudo);
-      grade.append(card);
-    });
-  } catch (erro) {
-    console.error("Erro ao carregar notícias:", erro);
-  }
-}
-
-carregarNoticias();
-</script>
-
-<script>
-async function carregarNoticias() {
-  const grade = document.querySelector("#noticias .news-grid");
-  if (!grade) return;
-
-  try {
-    const resposta = await fetch("./noticias.json");
-    if (!resposta.ok) throw new Error("Erro ao carregar notícias");
-
-    const dados = await resposta.json();
-    if (!Array.isArray(dados.noticias) || dados.noticias.length === 0) {
-      throw new Error("Nenhuma notícia disponível");
-    }
-
-    grade.replaceChildren();
-
-    dados.noticias.forEach(noticia => {
-      const card = document.createElement("article");
-      card.className = "news-card";
-
-      const conteudo = document.createElement("div");
-      conteudo.className = "news-content";
-
-      const tag = document.createElement("span");
-      tag.className = "news-tag";
-      tag.textContent = noticia.fonte || "Games";
-
-      const titulo = document.createElement("h3");
-      titulo.textContent = noticia.titulo || "Notícia gamer";
-
-      const resumo = document.createElement("p");
-      resumo.textContent = noticia.resumo || "Confira os detalhes desta notícia.";
-
-      const link = document.createElement("a");
-      link.href = noticia.link;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = "Ler notícia →";
-
-      conteudo.append(tag, titulo, resumo, link);
-      card.append(conteudo);
-      grade.append(card);
-    });
-  } catch (erro) {
-    console.error("Erro ao carregar notícias:", erro);
-  }
-}
-
-carregarNoticias();
-</script>
-
 </body>
 </html>
+ 
