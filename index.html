@@ -560,9 +560,12 @@ https://www.youtube.com/embed/7hbqhfeTm2U
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
  
+
 <script>
 async function carregarNoticias() {
   const grade = document.querySelector("#noticias .news-grid");
+  const filtros = document.querySelectorAll("#noticias .news-filter");
+
   if (!grade) return;
 
   try {
@@ -570,41 +573,74 @@ async function carregarNoticias() {
     if (!resposta.ok) throw new Error("Erro ao carregar notícias");
 
     const dados = await resposta.json();
-
     if (!Array.isArray(dados.noticias) || dados.noticias.length === 0) {
       grade.textContent = "Nenhuma notícia disponível no momento.";
       return;
     }
 
-    grade.replaceChildren();
+    const noticias = dados.noticias;
 
-    dados.noticias.forEach(noticia => {
-      const card = document.createElement("article");
-      card.className = "news-card";
+    function normalizar(texto) {
+      return (texto || "")
+        .toString()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim();
+    }
 
-      const conteudo = document.createElement("div");
-      conteudo.className = "news-content";
+    function renderizar(categoria = "Todas") {
+      const selecionadas = categoria === "Todas"
+        ? noticias
+        : noticias.filter(noticia =>
+            normalizar(noticia.categoria) === normalizar(categoria)
+          );
 
-      const tag = document.createElement("span");
-      tag.className = "news-tag";
-      tag.textContent = noticia.categoria || noticia.fonte || "Games";
+      grade.replaceChildren();
 
-      const titulo = document.createElement("h3");
-      titulo.textContent = noticia.titulo || "Notícia gamer";
+      if (selecionadas.length === 0) {
+        grade.textContent = "Nenhuma notícia encontrada nesta categoria.";
+        return;
+      }
 
-      const resumo = document.createElement("p");
-      resumo.textContent = noticia.resumo || "Confira os detalhes desta notícia.";
+      selecionadas.forEach(noticia => {
+        const card = document.createElement("article");
+        card.className = "news-card";
 
-      const link = document.createElement("a");
-      link.href = noticia.link || "#";
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = "Ler notícia →";
+        const conteudo = document.createElement("div");
+        conteudo.className = "news-content";
 
-      conteudo.append(tag, titulo, resumo, link);
-      card.append(conteudo);
-      grade.append(card);
+        const tag = document.createElement("span");
+        tag.className = "news-tag";
+        tag.textContent = noticia.categoria || noticia.fonte || "Games";
+
+        const titulo = document.createElement("h3");
+        titulo.textContent = noticia.titulo || "Notícia gamer";
+
+        const resumo = document.createElement("p");
+        resumo.textContent = noticia.resumo || "Confira os detalhes desta notícia.";
+
+        const link = document.createElement("a");
+        link.href = noticia.link || "#";
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Ler notícia →";
+
+        conteudo.append(tag, titulo, resumo, link);
+        card.append(conteudo);
+        grade.append(card);
+      });
+    }
+
+    filtros.forEach(botao => {
+      botao.addEventListener("click", () => {
+        filtros.forEach(item => item.classList.remove("active"));
+        botao.classList.add("active");
+        renderizar(botao.dataset.categoria);
+      });
     });
+
+    renderizar();
   } catch (erro) {
     console.error("Erro ao carregar notícias:", erro);
     grade.textContent = "Não foi possível carregar as notícias.";
@@ -613,6 +649,7 @@ async function carregarNoticias() {
 
 carregarNoticias();
 </script>
+
 </body>
 </html>
  
